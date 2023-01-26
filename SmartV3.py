@@ -37,7 +37,7 @@ class ChatGPT(object):
     @neovim.function('send_query', sync=True)
     def send_query(self, args):
         query = args[0]
-        API_KEY = "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"
+        API_KEY = "your ChatGPT API key"
         API_URL = "https://api.openai.com/v1/engines/davinci-codex/completions"
         data = {
             "prompt": query,
